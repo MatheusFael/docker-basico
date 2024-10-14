@@ -7,7 +7,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - "C:/Users/mathe/Documents/docker/html:/usr/share/nginx/html"
+      - "./html:/usr/share/nginx/html"
 
   mysql:
     image: mysql:8
@@ -20,7 +20,7 @@ services:
     ports:
       - 3307:3306
     volumes:
-      - "C:/Users/mathe/Documents/docker/mysql:/var/lib/mysql"
+      - "./mysql:/var/lib/mysql"
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
